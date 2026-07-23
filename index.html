@@ -212,11 +212,19 @@
     <span class="section-label">Нам доверяют</span>
     <h2 class="section-title">Отзывы пациентов</h2>
     <p class="section-subtitle">Читайте отзывы на Яндекс.Картах — мы не редактируем и не удаляем ни одного.</p>
+    <!-- СВЕРЯТЬ ПЕРИОДИЧЕСКИ — цифры меняются -->
+    <div class="reviews-rating">
+      <span class="reviews-rating__score">4,9</span>
+      <span class="reviews-rating__stars" aria-hidden="true">★★★★★</span>
+      <span class="reviews-rating__count">79 отзывов на Яндекс.Картах</span>
+    </div>
+
     <!-- Виджет отзывов Яндекс.Карт — бесплатный iframe, API-ключ не нужен -->
     <iframe
       src="https://yandex.ru/maps-reviews-widget/240564317734?comments"
-      width="100%" height="460" frameborder="0"
-      style="border-radius:12px;border:none;display:block"></iframe>
+      id="reviews-iframe"
+      width="100%" height="660" frameborder="0"
+      style="border-radius:12px;border:none;display:block;max-width:100%"></iframe>
     <div style="text-align:center;margin-top:32px">
       <a href="https://yandex.ru/maps/org/soul_dental/240564317734/reviews/" target="_blank" rel="noopener" class="btn btn--outline">Открыть клинику на Яндекс.Картах</a>
     </div>

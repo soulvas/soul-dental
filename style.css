@@ -375,6 +375,30 @@ p:last-child { margin-bottom: 0; }
 /* =============================================
    ОТЗЫВЫ
    ============================================= */
+.reviews-rating {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.reviews-rating__score {
+  font-family: var(--font-head);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1;
+}
+.reviews-rating__stars {
+  font-size: 1.4rem;
+  color: var(--accent);
+  letter-spacing: 2px;
+  line-height: 1;
+}
+.reviews-rating__count {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
 .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .card-review {
   background: var(--white);
@@ -835,6 +859,7 @@ p:last-child { margin-bottom: 0; }
   .reviews-grid { grid-template-columns: 1fr; gap: 12px; }
   /* плавающая кнопка 45px + bottom 24px = 69px; берём 90px чтобы не перекрывала «Все отзывы» */
   #reviews .container { padding-bottom: 90px; }
+  #reviews-iframe { height: 530px; }
 
   /* --- Карточки врачей --- */
   .doctors-grid { grid-template-columns: repeat(2, 1fr); }
