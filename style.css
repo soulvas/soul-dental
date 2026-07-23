@@ -1113,6 +1113,8 @@ p:last-child { margin-bottom: 0; }
 .btn-max-pending { opacity: 0.45; cursor: not-allowed; }
 .btn-max-pending:hover { opacity: 0.45; transform: none; box-shadow: none; background: transparent; }
 .max-link-pending { opacity: 0.45; cursor: not-allowed; }
+/* Подписи к телефонам */
+.phone-label { font-size: 0.72rem; opacity: 0.55; font-weight: 400; white-space: nowrap; }
 
 /* =============================================
    VINYL MUSIC PLAYER
