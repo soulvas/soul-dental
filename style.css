@@ -663,7 +663,7 @@ p:last-child { margin-bottom: 0; }
 /* =============================================
    КАРТОЧКИ ВРАЧЕЙ
    ============================================= */
-.doctors-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; }
+.doctors-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
 .card-doctor {
   background: var(--white);
   border: 1px solid var(--border);
@@ -1118,8 +1118,8 @@ p:last-child { margin-bottom: 0; }
   bottom: 90px;
   right: 28px;
   z-index: 300;
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   background: var(--dark);
   border: none;
   cursor: pointer;
@@ -1133,8 +1133,8 @@ p:last-child { margin-bottom: 0; }
 }
 .sax-btn:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(4,52,44,0.45); }
 .sax-icon {
-  width: 22px;
-  height: 34px;
+  width: 42px;
+  height: 42px;
   color: var(--accent);
   display: block;
 }
@@ -1166,8 +1166,8 @@ p:last-child { margin-bottom: 0; }
 .player-stub__btn--off { background: rgba(255,255,255,0.15); cursor: default; }
 
 @media (max-width: 680px) {
-  .sax-btn { bottom: 90px; right: 16px; width: 48px; height: 48px; }
-  .sax-icon { width: 18px; height: 28px; }
+  .sax-btn { bottom: 90px; right: 16px; width: 56px; height: 56px; }
+  .sax-icon { width: 36px; height: 36px; }
 }
 
 /* ===== ТЕЛЕФОН В БЛОКЕ ЗАПИСИ ===== */

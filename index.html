@@ -352,13 +352,23 @@
 
 <!-- Vinyl music player -->
 <button class="sax-btn" id="vinylBtn" aria-label="Музыка клиники">
-  <svg class="sax-icon" viewBox="0 0 28 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <rect x="8" y="0" width="12" height="4" rx="2"/>
-    <path d="M8 4 Q7 10 11 12 L17 12 Q20 8 18 4 Z"/>
-    <path d="M10 11 h8 a4 4 0 0 1 4 4 v18 a4 4 0 0 1 -4 4 h-4 a4 4 0 0 1 -4 -4 V15 a4 4 0 0 1 4 -4z"/>
-    <path d="M10 33 Q3 37 2 42 a4 4 0 0 0 7 3 Q13 44 16 39 L18 33 Z"/>
-    <circle cx="14" cy="21" r="2" fill="rgba(255,255,255,0.35)"/>
-    <circle cx="14" cy="27" r="2" fill="rgba(255,255,255,0.35)"/>
+  <svg class="sax-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Диск пластинки -->
+    <circle cx="20" cy="20" r="19" fill="currentColor"/>
+    <!-- Бороздки -->
+    <circle cx="20" cy="20" r="15.5" stroke="rgba(4,52,44,0.32)" stroke-width="1" fill="none"/>
+    <circle cx="20" cy="20" r="12"   stroke="rgba(4,52,44,0.32)" stroke-width="1" fill="none"/>
+    <circle cx="20" cy="20" r="8.5"  stroke="rgba(4,52,44,0.32)" stroke-width="1" fill="none"/>
+    <!-- Наклейка в центре -->
+    <circle cx="20" cy="20" r="5.5" fill="rgba(4,52,44,0.55)"/>
+    <!-- Центральное отверстие -->
+    <circle cx="20" cy="20" r="2" fill="rgba(4,52,44,0.9)"/>
+    <!-- Тонарм: точка поворота -->
+    <circle cx="34.5" cy="5.5" r="2.8" fill="rgba(4,52,44,0.8)"/>
+    <!-- Тонарм: трубка -->
+    <line x1="34.5" y1="5.5" x2="27" y2="23" stroke="rgba(4,52,44,0.8)" stroke-width="2" stroke-linecap="round"/>
+    <!-- Игла (стилус) -->
+    <circle cx="27" cy="23" r="1.6" fill="rgba(4,52,44,0.9)"/>
   </svg>
 </button>
 <script src="script.js"></script>
