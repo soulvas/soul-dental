@@ -133,6 +133,28 @@ function sendForm(event, formId) {
 })();
 
 
+/* ===== MAX PENDING TOOLTIP ===== */
+function showMaxPending(e) {
+  e.preventDefault();
+  var toast = document.getElementById('max-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'max-toast';
+    toast.style.cssText = [
+      'position:fixed', 'bottom:110px', 'left:50%', 'transform:translateX(-50%)',
+      'background:#04342C', 'color:#fff', 'padding:12px 22px',
+      'border-radius:10px', 'font-size:0.88rem', 'font-family:inherit',
+      'z-index:9999', 'white-space:nowrap', 'box-shadow:0 4px 18px rgba(4,52,44,0.35)',
+      'pointer-events:none', 'transition:opacity 0.3s'
+    ].join(';');
+    document.body.appendChild(toast);
+  }
+  toast.textContent = 'Ссылка на MAX будет добавлена после подтверждения клиникой';
+  toast.style.opacity = '1';
+  clearTimeout(toast._t);
+  toast._t = setTimeout(function () { toast.style.opacity = '0'; }, 3500);
+}
+
 /* ===== SCROLL REVEAL ===== */
 (function () {
   var SELECTORS = [

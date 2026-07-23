@@ -349,8 +349,8 @@
           </div>
           <div class="form-record__buttons">
             <button type="submit" class="btn btn--accent">Отправить заявку</button>
-            <!-- УТОЧНИТЬ У КЛИНИКИ — точная пригласительная ссылка MAX -->
-            <a href="https://max.ru/u/souldental" target="_blank" rel="noopener" class="btn btn--outline">Написать в MAX</a>
+            <!-- [УТОЧНИТЬ У КЛИНИКИ — пригласительная ссылка MAX формата max.ru/join/...] -->
+            <button type="button" class="btn btn--outline btn-max-pending" onclick="showMaxPending(event)">Написать в MAX</button>
           </div>
           <p class="form-record__phone">или позвоните: <a href="tel:+78126071307">+7 (812) 607-13-07</a></p>
         </form>
@@ -398,8 +398,8 @@
           <li><a href="tel:+78126071307">+7 (812) 607-13-07</a></li>
           <li><a href="tel:+79291191307">+7 (929) 119-13-07</a></li>
           <li><a href="mailto:souldentalclinic@ya.ru">souldentalclinic@ya.ru</a></li>
-          <li><!-- УТОЧНИТЬ У КЛИНИКИ — точная пригласительная ссылка MAX -->
-          <a href="https://max.ru/u/souldental" target="_blank">MAX</a> &nbsp;|&nbsp; <a href="https://vk.com/souldental" target="_blank">ВКонтакте</a></li>
+          <li><!-- [УТОЧНИТЬ У КЛИНИКИ — пригласительная ссылка MAX формата max.ru/join/...] -->
+          <span class="max-link-pending" onclick="showMaxPending(event)">MAX</span> &nbsp;|&nbsp; <a href="https://vk.com/souldental" target="_blank">ВКонтакте</a></li>
         </ul>
       </div>
     </div>

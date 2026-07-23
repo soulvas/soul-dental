@@ -109,8 +109,8 @@
         </div>
 
         <div style="display:flex;gap:12px;margin-top:24px">
-          <!-- УТОЧНИТЬ У КЛИНИКИ — точная пригласительная ссылка MAX -->
-          <a href="https://max.ru/u/souldental" target="_blank" rel="noopener" class="btn btn--accent">MAX</a>
+          <!-- [УТОЧНИТЬ У КЛИНИКИ — пригласительная ссылка MAX формата max.ru/join/...] -->
+          <button type="button" class="btn btn--accent btn-max-pending" onclick="showMaxPending(event)">MAX</button>
           <a href="https://vk.com/souldental" target="_blank" rel="noopener" class="btn btn--outline">ВКонтакте</a>
         </div>
       </div>
@@ -172,8 +172,8 @@
         </div>
         <p style="text-align:center;margin-top:16px;font-size:0.85rem;color:var(--muted)">
           или напишите нам в &nbsp;
-          <!-- УТОЧНИТЬ У КЛИНИКИ — точная пригласительная ссылка MAX -->
-          <a href="https://max.ru/u/souldental" target="_blank" rel="noopener" style="font-weight:600">MAX</a>
+          <!-- [УТОЧНИТЬ У КЛИНИКИ — пригласительная ссылка MAX формата max.ru/join/...] -->
+          <span class="max-link-pending" onclick="showMaxPending(event)" style="font-weight:600">MAX</span>
         </p>
         <p class="form-record__phone" style="text-align:center;margin-top:12px">или позвоните: <a href="tel:+78126071307">+7 (812) 607-13-07</a></p>
         <!-- Подключение отправки формы — следующий этап разработки.
@@ -241,8 +241,8 @@
           <li><a href="tel:+78126071307">+7 (812) 607-13-07</a></li>
           <li><a href="tel:+79291191307">+7 (929) 119-13-07</a></li>
           <li><a href="mailto:souldentalclinic@ya.ru">souldentalclinic@ya.ru</a></li>
-          <li><!-- УТОЧНИТЬ У КЛИНИКИ — точная пригласительная ссылка MAX -->
-          <a href="https://max.ru/u/souldental" target="_blank">MAX</a> &nbsp;|&nbsp; <a href="https://vk.com/souldental" target="_blank">ВКонтакте</a></li>
+          <li><!-- [УТОЧНИТЬ У КЛИНИКИ — пригласительная ссылка MAX формата max.ru/join/...] -->
+          <span class="max-link-pending" onclick="showMaxPending(event)">MAX</span> &nbsp;|&nbsp; <a href="https://vk.com/souldental" target="_blank">ВКонтакте</a></li>
         </ul>
       </div>
     </div>
